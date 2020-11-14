@@ -1,4 +1,4 @@
-name: "PR Branch Labeler"
+name: "Falldog PR Branch Labeler"
 description: "Automatically label your PRs based on their branches."
 author: "Florian Fittschen"
 inputs:

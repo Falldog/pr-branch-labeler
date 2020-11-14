@@ -34,7 +34,7 @@ export async function getConfig(github: github.GitHub, fileName: string, context
 }
 
 function parseConfig(content: string): ConfigEntry[] {
-  const configObject = yaml.safeLoad(Buffer.from(content, "base64").toString()) || {};
+  const configObject = yaml.safeLoad(Buffer.from(response.data.content, response.data.encoding).toString()) || {};
   if (configObject === {}) {
     return [];
   }
